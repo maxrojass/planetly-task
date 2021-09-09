@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="utf-8">
+      <title>Planetly task</title>
+  </head>
+  <body>
+      <form action="{{ url_for('update')}}" method="post">
+          <h3>Select one of the options of the menu below</h3>
+          <h5>1. to update the Average Temperature</h5>
+          <h5>2. to update the Average Temperature Uncertainty </h5>
+          <div>
+            <input type="radio" id="Choice1"
+             name="option" value="1">
+            <label for="Choice1">1.</label>
+          </div>
+          <div>
+            <input type="radio" id="Choice2"
+             name="option" value="2">
+            <label for="Choice2">2.</label>
+          </div>
+          <div>
+              <button >Continue</button>
+          </div>
+      </form>
+  </body>

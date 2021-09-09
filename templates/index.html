@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="utf-8">
+      <title>Planetly task</title>
+  </head>
+  <body>
+      <form action="{{ url_for('selection')}}" method="post">
+          <h3>Select one of the options of the menu below</h3>
+          <h5>1. Add new entry </h5>
+          <h5>2. Update existing entry </h5>
+          <h5>3. Return the top N cities that have the highest monthly Average Temperature </h5>
+          <div>
+            <input type="radio" id="Choice1"
+             name="choice" value="1">
+            <label for="Choice1">1.</label>
+          </div>
+          <div>
+            <input type="radio" id="Choice2"
+             name="choice" value="2">
+            <label for="Choice2">2.</label>
+          </div>
+          <div>
+            <input type="radio" id="Choice3"
+             name="choice" value="3">
+            <label for="Choice3">3.</label>
+          </div>
+          <div>
+              <button >Submit</button>
+          </div>
+      </form>
+  </body>
+
+</html>
+

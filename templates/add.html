@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="utf-8">
+      <title>Planetly task</title>
+  </head>
+<body>
+
+    <form action="{{ url_for('add')}}" method="post"> 
+    <div class="form-group">
+        <h5>Enter the date(yyyy-mm-dd) for the new entry</h5>
+        <input class="form-control" type="text" name="dt" placeholder="yyyy-mm-dd">
+    </div>
+    <div class="form-group">
+        <h5>Enter the name of the city for the new entry</h5>
+        <input class="form-control" type="text" name="city">
+    </div>
+    <div class="form-group">
+        <h5>Enter the name of the country for the new entry</h5>
+        <input class="form-control" type="text" name="country">
+    </div>
+    <div class="form-group">
+        <h5>Enter the average temperature for the new entry</h5>
+        <input class="form-control" type="text" name="averagetemperature">
+    </div>
+    <div class="form-group">
+        <h5>Enter the average temperature uncertainty for the new entry</h5>
+        <input class="form-control" type="text" name="averagetemperatureuncertainty">
+    </div>
+    <div class="form-group">
+        <h5>Enter the latitude of the city for the new entry</h5>
+        <input class="form-control" type="text" name="latitude">
+    </div>
+    <div class="form-group">
+        <h5>Enter the longitude of the city for the new entry</h5>
+        <input class="form-control" type="text" name="longitude">
+    </div>
+        
+    <div class="form-group">
+    <button class="btn btn-primary">Submit</button>
+    </div>
+    </form>
+</body>
