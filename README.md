@@ -4,9 +4,11 @@ This API is used to work with a database with the historical temperatures of the
 
 ## Pre-requirements
 
-In this API the following steps are needed to make it work
+In this API the following steps are needed to make it work:
 
-- Create a branch
+- Download dataset
+- Read DB_Creation.txt to set-up the database with postgreSQL
+- Fork the project
 - Pull the files
 - Install docker container
 - Install requirements.txt
