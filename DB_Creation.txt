@@ -1,0 +1,36 @@
+## 1. Creating Database
+
+for this was use postgreSQL and Pgadmin4. The code to create the database and upload the CSV file is the following:
+
+### 1.1 creating database
+```
+CREATE DATABASE "planetly-task"
+    WITH 
+    OWNER = postgres
+    ENCODING = 'UTF8'
+    LC_COLLATE = 'C'
+    LC_CTYPE = 'C'
+    TABLESPACE = pg_default
+    CONNECTION LIMIT = -1;
+```
+### 1.2 Creating table
+```
+CREATE TABLE Global_Land_Temperatures_By_City
+(dt DATE NOT NULL, 
+AverageTemperature FLOAT(8), 
+AverageTemperatureUncertainty FLOAT(8),
+City VARCHAR(150),
+Country VARCHAR(150),
+Latitude VARCHAR(150),
+Longitude VARCHAR(150)
+);
+```
+### 1.3 Uploading CSV file
+```
+COPY Global_Land_Temperatures_By_City
+FROM '/Users/maxrojas/Desktop/job_search/planetly/dataset/GlobalLandTemperaturesByCity.csv'
+DELIMITER ','
+CSV HEADER;
+
+--command " "\\copy public.global_land_temperatures_by_city (dt, averagetemperature, averagetemperatureuncertainty, city, country, latitude, longitude) FROM '/Users/maxrojas/Desktop/job search/planetly/dataset/GlobalLandTemperaturesByCity.csv' DELIMITER ',' CSV HEADER QUOTE '\"' ESCAPE '''';""
+```
