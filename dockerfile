@@ -5,6 +5,7 @@ FROM python:3.8
 WORKDIR /code
 
 # copy the dependencies file to the working directory
+COPY templates /app/templates
 COPY Requirements.txt .
 
 # install dependencies
