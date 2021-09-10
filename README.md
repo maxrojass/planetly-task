@@ -33,4 +33,4 @@ For future improvements:
 
 
 ## Versions and updates
-[Version 1.0](): Uploaded first version. automated.
+[Version 1.0](https://github.com/maxrojass/planetly-task): Uploaded first version. automated.
