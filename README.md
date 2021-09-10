@@ -17,7 +17,7 @@ In this API the following steps are needed to make it work:
 
 ## Explanation of the code
 
-The brief explanation of the code can be found [here](https://docs.google.com/document/d/1y5SdWOuzvM-tFvmXV0oagp8_BsMroYBtHLgBw4-w0jM/edit?usp=sharing)
+The brief explanation of the API and the answer to the questions in the task can be found [here](https://docs.google.com/document/d/1y5SdWOuzvM-tFvmXV0oagp8_BsMroYBtHLgBw4-w0jM/edit?usp=sharing)
 
 ## Problems and future improvements
 The main problem that I faced during this task was with Flask and the many forms that I was creating for each step of the menu thinking in the user experience, this took me more time that I was expecting as I had to be very careful with the creation of the .html pages.
